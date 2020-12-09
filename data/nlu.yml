@@ -1,0 +1,141 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: young_alfred
+  examples: |
+    - who is young alfred
+    - young alfred
+
+- intent: reach_young_alfred
+  examples: |
+    - how can i reach young Alfred 
+    - reach young alfred
+- intent: quote_cost_me_anything
+  examples: |
+    - does getting a quote cost me 
+    - does getting a quote cost me anything
+
+- intent: accurate_are_your_quotes
+  examples: |
+    - how accurate are your quotes
+    - your cost is accurate
+
+- intent: your_quote_include_the_sr22
+  examples: |
+    - does your quote include the filing fee for an SR22
+    - your quote include the filing fee for an SR22
+    - your quote include the filing fee
+
+- intent: you_charge_broker_fee
+  examples: |
+    - do you charge a broker fee
+    - you charge broker fee
+
+- intent: credit_score
+  examples: |
+    - does getting a quote affect my credit score 
+    - does getting a quote affect my credit score (FICO score)?
+    - effect my credit score
+
+- intent: discounts_are_available
+  examples: |
+    - what type of discounts are available 
+    - discounts are available
+- intent: get_discounts_for_buying_more
+  examples: |
+    - do I get discounts for buying more than one policy from Young Alfred
+    - get discounts for buying more than one policy
+- intent: young_alfred_service_the
+  examples: |
+    - does young alfred service the policy as well
+    - Does Young Alfred service the policy

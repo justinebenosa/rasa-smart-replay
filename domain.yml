@@ -1,0 +1,69 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - young_alfred
+  - reach_young_alfred
+  - quote_cost_me_anything
+  - accurate_are_your_quotes
+  - your_quote_include_the_sr22
+  - you_charge_broker_fee
+  - credit_score
+  - discounts_are_available
+  - get_discounts_for_buying_more
+  - young_alfred_service_the
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_young_alfred:
+  - text: "Young Alfred’s mission is to protect your home and family. We know buying insurance is confusing, so we created an insurance expert to serve as your independent advisor when evaluating coverage. He is here to help you purchase insurance policies online that are customized to your needs. Everyone has unique requirements based on where they live and what they own.Young Alfred gives you data and transparency so you can make educated decisions when comparing quotes and purchasing coverage. It's time to welcome Young Alfred into the family."
+
+  utter_reach_young_alfred:
+  - text: "Email info@youngalfred.com and a representative will quickly follow-up. Or call 215.586.5055 to speak to a licensed insurance representative. We’re ready to serve you!"
+
+  utter_quote_cost_me_anything :
+  - text: "No! They are 100% free. We will only ask for payment information once you are ready to purchase a policy."
+
+  utter_accurate_are_your_quotes :
+  - text: "Very accurate! In most cases the original quote is the premium you end up paying. This is because we are getting rates directly from our carrier partners, and not using third party quote estimators."
+  
+  utter_your_quote_include_the_sr22 : 
+  - text: "Young Alfred quotes exclude SR22 filing fees, though the filing generally costs $20-$25. You can get a final rate with all fees included from our licensed insurance representatives." 
+  utter_you_charge_broker_fee : 
+  - text: "No"
+
+  utter_credit_score :
+  - text: "No. In most cases, carriers will access your credit score to make a quote, though they do this using a “soft inquiry”. This does not have an impact on your credit or FICO score because you are not applying for financing."
+  utter_discounts_are_available : 
+  - text: "Our carriers offer hundreds of unique discounts including the smart home discount, paid in full discount, roof update discount, HVAC update discount, electrical update discount, plumbing update discount, new home build discount, hip roof discount, good credit discount, no claim history discount, wind mitigation discount, hail resistant roofing discount, multi-policy discount, multi-car discount, multi-driver discount, new car discount, mature driver discount, safe driver discount, higher education discount, distant student discount, driver improvement discount, continuous coverage discount, paperless discount, military discount, retiree discount, escrow bill discount, and many others."
+  utter_get_discounts_for_buying_more : 
+  - text: "In most cases, you will receive a discount if you purchase two or more policies from the same carrier. Note that sometimes the combined costs of getting an auto policy from one carrier and a homeowners policy from a different carrier may be cheaper than purchasing both from the same carrier. Young Alfred will help you find the best package combination."
+  utter_young_alfred_service_the : 
+  - text: "Yes, the Young Alfred world-class service carries beyond purchase, we will always be here to address your needs or concerns as you grow."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

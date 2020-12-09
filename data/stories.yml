@@ -1,0 +1,80 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: young alfred path 2
+  steps:
+  - intent : young_alfred
+  - action : utter_young_alfred
+
+- story: reach young alfred path 2
+  steps:
+  - intent : reach_young_alfred
+  - action : utter_reach_young_alfred
+
+- story: reach cost my path 2
+  steps:
+  - intent : quote_cost_me_anything
+  - action : utter_quote_cost_me_anything
+
+- story: accurate cost my path 2
+  steps:
+  - intent : accurate_are_your_quotes
+  - action : utter_accurate_are_your_quotes
+
+- story: quote include filling fee path 2
+  steps:
+  - intent : your_quote_include_the_sr22
+  - action : utter_your_quote_include_the_sr22
+
+- story: charge brocker fee path 2
+  steps:
+  - intent : you_charge_broker_fee
+  - action : utter_you_charge_broker_fee
+
+- story: credit score path 2
+  steps:
+  - intent : credit_score
+  - action : utter_credit_score
+
+- story: discounts are available path 2
+  steps:
+  - intent : discounts_are_available
+  - action : utter_discounts_are_available
+
+- story: discounts for buying more policy path 2
+  steps:
+  - intent : get_discounts_for_buying_more
+  - action : utter_get_discounts_for_buying_more
+  
+- story: young alfred service the policy  path 2
+  steps:
+  - intent : young_alfred_service_the
+  - action : utter_young_alfred_service_the
